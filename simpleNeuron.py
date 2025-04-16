@@ -1,10 +1,11 @@
 import numpy as np
 
 def sigmoid(x):
-    # Activation function sigmoid: f(x) = 1 / (1 + e^(-x))
+    # activation function sigmoid: f(x) = 1 / (1 + e^(-x))
     return 1 / (1 + np.exp(-x))
 
 class Neuron:
+    # implementation of a simple neuron
     def __init__(self, weight, bias):
         self.weights = weight
         self.bias = bias
